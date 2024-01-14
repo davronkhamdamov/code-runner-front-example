@@ -2,17 +2,20 @@
   padding: 0;
   margin: 0;
 }
-body{
+
+body {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#editor{
+
+#editor {
   width: 100vw;
   height: 100vh;
 }
-button{
+
+button {
   position: fixed;
   right: 20px;
   bottom: 20px;
