@@ -1,18 +1,27 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 #editor {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
+}
+
+.output {
+  width: 100%;
+  height: 30vh;
+  background-color: #333;
+  padding: 20px 40px;
+  color: white;
 }
 
 button {
@@ -26,4 +35,25 @@ button {
   color: white;
   z-index: 20;
   font-weight: bold;
+  cursor: pointer;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 40px;
+  background: #f2f2f2;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+.lang {
+  width: 100%;
+  background: #333;
+}
+.outputtext{
+  margin: 20px;
+  font-size: 20px;
 }
