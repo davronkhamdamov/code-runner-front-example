@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap);
+
+
 * {
   padding: 0;
   margin: 0;
@@ -5,15 +8,24 @@
 }
 
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #editor {
-  width: 100vw;
-  height: 70vh;
+  width: 60vw;
+  height: 65.8vh;
+}
+
+.code_editor_wrapper {
+  display: flex;
+}
+
+.question {
+  height: 100vh;
+  width: 40vw;
+  background: #2f2f2f;
+  padding: 40px 30px;
 }
 
 .output {
@@ -21,7 +33,6 @@ body {
   height: 30vh;
   background-color: #333;
   padding: 20px 40px;
-  color: white;
 }
 
 button {
@@ -40,20 +51,73 @@ button {
 
 select {
   width: 200px;
-  height: 30px;
-  border-radius: 10px;
+  height: 25px;
+  border-radius: 4px;
   margin-left: 40px;
   background: #f2f2f2;
-  font-size: 18px;
+  font-size: 17px;
   outline: none;
+  background: #111;
+  color: white;
   border: none;
+  font-family: "Ubuntu";
 }
 
 .lang {
   width: 100%;
   background: #333;
+  display: flex;
+  height: 40px;
+  align-items: center;
 }
-.outputtext{
-  margin: 20px;
+
+.outputtext {
+  margin: 10px 0;
   font-size: 20px;
+  width: 90%;
+  height: auto;
+  min-height: 20vh;
+  background: #555;
+  display: block;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.output_status {
+  display: flex;
+  gap: 20px;
+  height: 40px;
+  align-items: center;
+}
+
+.output_text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.passed,
+.error {
+  color: rgb(0, 255, 0);
+  font-size: 18px;
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+.hint {
+  justify-self: center;
+  color: yellow;
+  display: none;
+}
+
+.question_text,
+.question_description {
+  margin: 40px 0;
+  font-size: 18px;
+}
+
+.example {
+  line-height: 25px;
 }

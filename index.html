@@ -11,22 +11,73 @@
     </head>
 
     <body>
-        <div id="editor"></div>
-        <div class="lang">
-            <select name="lang" id="lang">
-                <option value="javascript">Javascript</option>
-                <option value="html">HTML</option>
-                <option value="css">Css</option>
-                <option value="python">Python</option>
-                <option value="golang">Golang</option>
-                <option value="php">Php</option>
-                <option value="java">Java</option>
-            </select>
+        <div class="code_editor_wrapper">
+            <div class="question">
+                <h1>1. Binary Search</h1>
+                <p class="question_text">
+                    Given an array of integers nums which is sorted in ascending
+                    order, and an integer target, write a function to search
+                    target in nums. If target exists, then return its index.
+                    Otherwise, return -1.
+                </p>
+                <p class="question_description">
+                    You must write an algorithm with O(log n) runtime
+                    complexity.
+                </p>
+                <p class="example">
+                    Example 1:
+                    <br />
+                    <br />
+                    Input: nums = [-1, 0, 3, 5, 9, 12],
+                    <br />
+                    target = 9
+                    <br />
+                    Output: 4 <br />
+                    Explanation: 9 exists in nums and its index is 4
+                </p>
+                <br />
+                <br />
+                <p class="example">
+                    Example 2:
+                    <br />
+                    <br />
+                    Input: nums = [-1, 0, 3, 5, 9, 12],
+                    <br />
+                    target = 2
+                    <br />
+                    Output: -1
+                    <br />
+                    Explanation: 2 does not exist in nums so return -1
+                </p>
+            </div>
+            <div>
+                <div class="lang">
+                    <select name="lang" id="lang">
+                        <option value="javascript">Javascript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">Css</option>
+                        <option value="python">Python</option>
+                        <option value="golang">Golang</option>
+                        <option value="php">Php</option>
+                        <option value="java">Java</option>
+                    </select>
+                </div>
+                <div id="editor"></div>
+                <div class="output">
+                    <div class="output_status">
+                        <p class="output_text">Output:</p>
+                        <p class="passed">Passed</p>
+                        <p class="error">Error</p>
+                        <p class="hint">
+                            Output should be equal to
+                            <code class="shouldBe"></code>
+                        </p>
+                    </div>
+                    <code class="outputtext"></code>
+                </div>
+            </div>
         </div>
-        <div class="output">
-            <h2>Output:</h2>
-            <div class="outputtext"></div>
-        </div>
+
         <button id="button">Run</button>
         <script src="js/app.js"></script>
     </body>
